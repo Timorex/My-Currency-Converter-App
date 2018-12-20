@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> currency converter </title>
+<link rel="stylesheet" href="dist/css/currency.css">
+</head>
+<body onload="convertCurrency();">
+  <div id="box">
+    <h2> Currency Converter <h2>
+      <table>
+        <tr>
+          <td> <input id="fromAmount" type="text" size="15" value="1" onkeyup="convertCurrency();"/> </td>
+          <td>
+            <select id="fromCountry" onchange="convertCurrency();">
+              <option value="GHS">Ghana(GHS)</option>
+              <option value="NGN">Nigeria(NGN)</option>
+              <option value="ZAR">South Africa(ZAR)</option>
+              <option value="AUD">Australin Doller(AUD)</option>
+              <option value="CAD">Canadian Dollar(CAD)</option>
+              <option value="GBP">Pound Starling(GBP)</option>
+              <option value="INR">Indian Rupee(INR)</option>
+              <option value="JPY">Japanese Yen(JPY)</option>
+              <option value="PHP">Philipine Peso(PHP)</option>
+              <option value="DKK">Danish Krone(DKK)</option>
+              <option value="ILS">Isreali New Shekel(ILS)</option>
+              <option value="USD" selected>American Dollars(USD)</option>
+              </select>
+          </td>
+        </tr>
+        <tr>
+          <td> <input id="toAmount" type="text" size="15" disabled/> </td>
+          <td>
+            <select id="toCountry" onchange="convertCurrency();" >
+              <option value="GHC">Ghana(GHC)</option>
+              <option value="NGN" selected>Nigeria(NGN)</option>
+              <option value="ZAR">South Africa(ZAR)</option>
+              <option value="AUD">Australin Doller(AUD)</option>
+              <option value="CAD">Canadian Dollar(CAD)</option>
+              <option value="GBP">Pound Starling(GBP)</option>
+              <option value="INR">Indian Rupee(INR)</option>
+              <option value="JPY">Japanese Yen(JPY)</option>
+              <option value="PHP">Philipine Peso(PHP)</option>
+              <option value="DKK">Danish Krone(DKK)</option>
+              <option value="ILS">Isreali New Shekel(ILS)</option>
+              <option value="USD">American Dollars(USD)</option>
+              </select>
+          </td>
+        </tr>
+      </table>
+  </div>
+</body>
+<script src="dist/js/currency.js"></script>
+</html>
